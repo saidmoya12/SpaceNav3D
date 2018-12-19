@@ -19,6 +19,8 @@ public class SpaceNav3D : ModuleRules
 
     public SpaceNav3D(ReadOnlyTargetRules Target) : base(Target)
 	{
+        PrivatePCHHeaderFile = "Private/SpaceNav3DPrivatePCH.h";
+
         // tanis - start faster compile time for small projects
         MinFilesUsingPrecompiledHeaderOverride = 1;
         bFasterWithoutUnity = true;
